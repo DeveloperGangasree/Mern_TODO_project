@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+
 let todoschema= mongoose.Schema({
     title:{
         type:String,
@@ -17,3 +18,5 @@ let todoschema= mongoose.Schema({
         default:false
     }
 });
+let Todos=mongoose.model('todo',todoschema)
+export default Todos
