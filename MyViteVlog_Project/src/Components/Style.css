@@ -1,0 +1,17 @@
+@import "tailwindcss";
+p{
+    color:#fff;
+    background-color: #000;
+}
+.mypclass{
+    font-size: 32px;
+    font-style: italic;
+}
+.active{
+    background-color: orange;
+    color: green;
+}
+.not-active{
+    background-color: rgb(255, 0, 255);
+    color: rgb(0, 0, 128);
+}

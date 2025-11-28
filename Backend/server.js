@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 //import Todos from "./Model/toDo_Model.js";
 //import todoRoute from './routes/todoRoutes.js';
 import todoRoute from './routes/todoRoutes.js';
+import cors from "cors";
 
 
 dotenv.config()
@@ -13,7 +14,7 @@ const app=express();
    connectDb();
 
 let PORT =process.env.PORT
-
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
